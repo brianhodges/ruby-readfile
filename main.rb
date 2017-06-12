@@ -1,16 +1,11 @@
 load 'team.rb'
 filename = 'top3list.csv'
-files = Dir.entries('./')
 teams = []
 delim = '+'
 
 puts
-files.each do |f|
-	if f == filename
-		puts 'Filename: ' + f
-		puts 'Modified At: ' + File.mtime(f).strftime('%Y-%m-%d %I:%M %p')
-	end
-end
+puts 'Filename: ' + filename
+puts 'Modified At: ' + File.mtime(filename).strftime('%Y-%m-%d %I:%M %p')
 puts
 
 content = File.open(filename).read

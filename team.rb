@@ -1,5 +1,4 @@
 class Team
-
 	attr_accessor :name, :super_bowl_wins
 
 	def initialize(arg1, arg2)
